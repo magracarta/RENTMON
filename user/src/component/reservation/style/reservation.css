@@ -1,0 +1,328 @@
+.reservationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservationCalendar {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.reservationCalendar .react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: white;
+  border: 1px solid #a0a096;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
+
+.reservationCalendar .react-calendar--doubleView {
+  width: 700px;
+}
+
+.reservationCalendar .react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+
+.reservationCalendar .react-calendar--doubleView .react-calendar__viewContainer > * {
+  width: 50%;
+  margin: 0.5em;
+}
+
+.reservationCalendar .react-calendar,
+.reservationCalendar .react-calendar *,
+.reservationCalendar .react-calendar *:before,
+.reservationCalendar .react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.reservationCalendar .react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.reservationCalendar .react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+
+.reservationCalendar .react-calendar__navigation {
+  display: flex;
+  height: 44px;
+  margin-bottom: 1em;
+}
+
+.reservationCalendar .react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+}
+
+.reservationCalendar .react-calendar__navigation button:disabled {
+  background-color: #f0f0f0;
+}
+
+.reservationCalendar .react-calendar__navigation button:enabled:hover,
+.reservationCalendar .react-calendar__navigation button:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.reservationCalendar .react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font: inherit;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.reservationCalendar .react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+
+.reservationCalendar .react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.reservationCalendar .react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+
+.reservationCalendar .react-calendar__month-view__days__day--neighboringMonth,
+.reservationCalendar .react-calendar__decade-view__years__year--neighboringDecade,
+.reservationCalendar .react-calendar__century-view__decades__decade--neighboringCentury {
+  color: #757575;
+}
+
+.reservationCalendar .react-calendar__year-view .react-calendar__tile,
+.reservationCalendar .react-calendar__decade-view .react-calendar__tile,
+.reservationCalendar .react-calendar__century-view .react-calendar__tile {
+  padding: 2em 0.5em;
+}
+
+.reservationCalendar .react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  font: inherit;
+  font-size: 0.833em;
+}
+
+.reservationCalendar .react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+  color: #ababab;
+}
+
+.reservationCalendar .react-calendar__month-view__days__day--neighboringMonth:disabled,
+.reservationCalendar .react-calendar__decade-view__years__year--neighboringDecade:disabled,
+.reservationCalendar .react-calendar__century-view__decades__decade--neighboringCentury:disabled {
+  color: #cdcdcd;
+}
+
+.reservationCalendar .react-calendar__tile:enabled:hover,
+.reservationCalendar .react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.reservationCalendar .react-calendar__tile--now {
+  background: #ffff76;
+}
+
+.reservationCalendar .react-calendar__tile--now:enabled:hover,
+.reservationCalendar .react-calendar__tile--now:enabled:focus {
+  background: #ffffa9;
+}
+
+.reservationCalendar .react-calendar__tile--hasActive {
+  background: #76baff;
+}
+
+.reservationCalendar .react-calendar__tile--hasActive:enabled:hover,
+.reservationCalendar .react-calendar__tile--hasActive:enabled:focus {
+  background: #a9d4ff;
+}
+
+.reservationCalendar .react-calendar__tile--active {
+  background: #006edc;
+  color: white;
+}
+
+.reservationCalendar .react-calendar__tile--active:enabled:hover,
+.reservationCalendar .react-calendar__tile--active:enabled:focus {
+  background: #1087ff;
+}
+
+.reservationCalendar .react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
+
+
+
+
+.space-info,
+.reservation-info,
+.user-info,
+.host-info,
+.payment-info,
+.agreement {
+  margin-bottom: 20px;
+}
+
+.space-info img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+
+.time-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.time-button {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.time-button.selected {
+  background-color: #0090DF;
+  color: white;
+  font-weight: bold;
+}
+
+.time-button:hover {
+  background-color: #007ACC;
+  color: white;
+}
+
+.time-button.start-selected {
+  background-color: #007bff; 
+  color: white;
+}
+
+.time-button.end-selected {
+  background-color: #007bff; 
+  color: white;
+}
+
+
+/* 예약 정보 섹션 */
+.reservation-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.reserveHead {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+
+
+.reserveTitle {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.reserveContent {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* 예약자 정보 섹션 */
+.user-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info .reserveHead {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+
+/* 결제 정보 섹션 */
+.payment-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payTitle {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.payContent {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.getCoupon-button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end; /* 버튼을 오른쪽 끝으로 정렬 */
+}
+
+.getCoupon-button:hover {
+  background-color: #007ACC;
+}
+
+/* 예약하기 버튼 */
+.submit-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #007ACC;
+
+}
